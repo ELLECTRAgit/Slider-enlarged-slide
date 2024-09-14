@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Слайдер с увеличенным центральным слайдом</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="main-slider">
+      <div class="container">
+        <ul class="category">
+          <li
+            class="category-item parklet active"
+            name="parklet"
+            id="parklet-button"
+            onclick="targetSlider('parklet')"
+          >
+            Парклеты
+          </li>
+          <li
+            class="category-item podium"
+            name="podium"
+            id="podium-button"
+            onclick="targetSlider('podium')"
+          >
+            Подиумы
+          </li>
+          <li
+            class="category-item swing"
+            name="swing"
+            id="swing-button"
+            onclick="targetSlider('swing')"
+          >
+            Качели
+          </li>
+        </ul>
+        <div class="swiper main-swiper" id="parklet">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/img/parklet3.jpg" />
+              <div class="wrapper-article">
+                <p class="article">25984159</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/parklet2.jpg" />
+              <div class="wrapper-article">
+                <p class="article">19374528</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/parklet1.jpg" />
+              <div class="wrapper-article">
+                <p class="article">52673948</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-slider_button-next" onclick="opacityArrow()">
+            <img
+              src="./assets/img/Arrow-right.svg"
+              alt="arrow"
+              class="img-arrow"
+            />
+          </div>
+          <div class="main-slider_button-prev" onclick="opacityArrow()">
+            <img
+              src="./assets/img/Arrow-left.svg"
+              alt="arrow"
+              class="img-arrow"
+            />
+          </div>
+        </div>
+
+        <div class="swiper main-swiper" id="podium" style="display: none">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/img/podium3.jpg" />
+              <div class="wrapper-article">
+                <p class="article">84265197</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/podium2.jpg" />
+              <div class="wrapper-article">
+                <p class="article">39152864</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/podium1.jpg" />
+              <div class="wrapper-article">
+                <p class="article">67289431</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-slider_button-next">
+            <img
+              src="./assets/img/Arrow-right.svg"
+              alt="arrow"
+              class="img-arrow"
+            />
+          </div>
+          <div class="main-slider_button-prev">
+            <img
+              src="./assets/img/Arrow-left.svg"
+              alt="arrow"
+              class="img-arrow"
+            />
+          </div>
+        </div>
+
+        <div class="swiper main-swiper" id="swing" style="display: none">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/img/kacheli3.jpg" />
+              <div class="wrapper-article">
+                <p class="article">15736249</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/kacheli2.jpg" />
+              <div class="wrapper-article">
+                <p class="article">28491573</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/kacheli1.jpg" />
+              <div class="wrapper-article">
+                <p class="article">93512876</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-slider_button-next">
+            <img
+              src="./assets/img/Arrow-right.svg"
+              alt="arrow"
+              class="img-arrow"
+            />
+          </div>
+          <div class="main-slider_button-prev">
+            <img
+              src="./assets/img/Arrow-left.svg"
+              alt="arrow"
+              class="img-arrow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
